@@ -3,7 +3,7 @@
 ## Used car lot
 
 
-#### Used car lot app covering encompassing all learned skills from this module.
+#### Used car lot app encompassing all learned skills from the SPA module.
 
 1. Bootstrap
 1. Array methods
