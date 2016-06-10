@@ -2,7 +2,6 @@
 
 ## Used car lot
 
-### Single Page Applications Quiz.
 
 #### Used car lot app covering encompassing all learned skills from this module.
 
