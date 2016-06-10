@@ -12,13 +12,13 @@ function populatePage (inventory) {
   			carYear = inventoryTracker.year,
   			carDescription = inventoryTracker.description,
   			carPurchasedStatus = inventoryTracker.purchased;
-
-        if (carPurchasedStatus !== false) {
+        // convert sold-status from true/false to human readable form
+        if (carPurchasedStatus === true) {
           carPurchasedStatus = 'Unavailable';
         } else {
           carPurchasedStatus = 'Available';
         };
-
+        // build product card
   			htmlString += `<div class="col-sm-3 carProductCard" id="carProducts${i}">
 												<h4>${carMake}</h4>
 												<h3>${carModel}</h3>
@@ -29,7 +29,7 @@ function populatePage (inventory) {
 												<p>${carColor}</p>
 											</div>`;
   }
-
+  // add products to DOM
   outputRow.innerHTML += htmlString;
 
   // Now that the DOM is loaded, establish all the event listeners needed

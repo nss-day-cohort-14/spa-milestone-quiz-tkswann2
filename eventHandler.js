@@ -5,15 +5,16 @@ var CarLot = (function (oldCarLot) {
       productCards = document.getElementsByClassName('carProductCard');
 
 // function to encapsulate the adding of event listeners to all DOM elements
-  oldCarLot.activateEvents = function (callBack) {
+  oldCarLot.activateEvents = function () {
   	// event listener for keydown press in text input box for adding description
   	// to car product cards
     	descriptionInput.addEventListener('keydown', function (event) {
     		for (var i = 0, j = productCards.length; i < j; i++) {
     			let editDescription = productCards[i];
-
+    			// check for the 'active' (clicked) card
     			if (editDescription.classList.contains('active')) {
     				descriptionOutput = editDescription.querySelector(`#carDescription${i}`);
+    				// insert input value to selected card description
     				descriptionOutput.innerText = descriptionInput.value;
     			}
     		}
@@ -22,6 +23,7 @@ var CarLot = (function (oldCarLot) {
     	for (var i = 0, j = productCards.length; i < j; i++) {
     		let productCard = productCards[i];
     		productCard.addEventListener('click', function (clickEvent) {
+    			// pass click event to callback function
     			CarLot.addStyles(clickEvent);
     		});
 			}
