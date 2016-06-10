@@ -20,7 +20,7 @@ function populatePage (inventory) {
 												<h6>${carYear}</h6>
 												<p id="carDescription${i}">${carDescription}</p>
 												<p>${carPurchasedStatus}</p>
-												<p id="carColor${i}">${carColor}</p>
+												<p>${carColor}</p>
 											</div>`;
   }
 
@@ -35,20 +35,4 @@ function populatePage (inventory) {
 // Load the inventory and send a callback function to be
 // invoked after the process is complete
 CarLot.loadInventory(populatePage);
-
-CarLot.activateEvents(function (clickEvent) {
-          // on click focus on text input for car description
-          descriptionInput.focus();
-          // loop to reset border width to default
-          for (var x = 0, y = productCards.length; x < y; x++) {
-            let removeBorderCards = productCards[x];
-            // remove border from cards
-                removeBorderCards.classList.remove('borderWidth');
-                removeBorderCards.classList.remove('active');
-          }
-          let clickedCard = clickEvent.currentTarget;
-          // add border width class on click
-              clickedCard.classList.add('borderWidth');
-              clickedCard.classList.add('active');
-        });
 
