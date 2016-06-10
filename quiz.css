@@ -1,12 +1,16 @@
 .defaultStyles {
-	background: lightblue;
 	border: 2px solid;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
 }
 .carProductCard {
 	margin: 10px 30px;
+	text-align: center;
 }
 
 .borderWidth {
 	border-width: 5px;
 }
-	
+
+.backgroundColor {
+	background: rgba(60, 230, 214, 1.0);
+}

@@ -13,6 +13,12 @@ function populatePage (inventory) {
   			carDescription = inventoryTracker.description,
   			carPurchasedStatus = inventoryTracker.purchased;
 
+        if (carPurchasedStatus !== false) {
+          carPurchasedStatus = 'Unavailable';
+        } else {
+          carPurchasedStatus = 'Available';
+        };
+
   			htmlString += `<div class="col-sm-3 carProductCard" id="carProducts${i}">
 												<h4>${carMake}</h4>
 												<h3>${carModel}</h3>
@@ -29,7 +35,6 @@ function populatePage (inventory) {
   // Now that the DOM is loaded, establish all the event listeners needed
   CarLot.resetStyles();
   CarLot.activateEvents();
-  CarLot.addStyles();
 }
 
 // Load the inventory and send a callback function to be

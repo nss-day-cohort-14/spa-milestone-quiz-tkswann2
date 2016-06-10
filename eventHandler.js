@@ -22,20 +22,8 @@ var CarLot = (function (oldCarLot) {
     	for (var i = 0, j = productCards.length; i < j; i++) {
     		let productCard = productCards[i];
     		productCard.addEventListener('click', function (clickEvent) {
-    			// on click focus on text input for car description
-    			descriptionInput.focus();
-    			// loop to reset border width to default
-    			for (var x = 0, y = productCards.length; x < y; x++) {
-    				let removeBorderCards = productCards[x];
-    				// remove border from cards
-    						removeBorderCards.classList.remove('borderWidth');
-    						removeBorderCards.classList.remove('active');
-    			}
-    			let clickedCard = clickEvent.currentTarget;
-    			// add border width class on click
-    					clickedCard.classList.add('borderWidth');
-    					clickedCard.classList.add('active');
-				});
+    			CarLot.addStyles(clickEvent);
+    		});
 			}
   };
  return oldCarLot;
