@@ -6,7 +6,7 @@ var CarLot = (function (oldCarLot) {
 			let productCard = productCards[i];
 					productCard.classList.add('defaultStyles');
 		}
-		var inventory = CarLot.getInventory();
+		let inventory = CarLot.getInventory();
 		for (var i = 0, j =  productCards.length; i < j; i++) {
 			let productCard = productCards[i],
 					color = inventory[i].color;
@@ -32,6 +32,7 @@ var CarLot = (function (oldCarLot) {
 					clickedCard.classList.add('active');
 
 		// on click focus on text input for car description
+		descriptionInput.value = '';
 		descriptionInput.focus();
 	};
 
