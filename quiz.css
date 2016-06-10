@@ -1,5 +1,12 @@
-.carProductCard {
+.defaultStyles {
 	background: lightblue;
-	border: 2px solid red;
-	margin: 30px;
+	border: 2px solid;
 }
+.carProductCard {
+	margin: 10px 30px;
+}
+
+.borderWidth {
+	border-width: 5px;
+}
+	
