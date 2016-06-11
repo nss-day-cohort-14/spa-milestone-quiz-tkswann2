@@ -1,0 +1,49 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "Orange",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Nissan",
+      "model": "Maxima",
+      "year": "2007",
+      "price": "5999",
+      "color": "Red",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Mazda",
+      "model": "Protoge",
+      "year": "2002",
+      "price": "2999",
+      "color": "Brown",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Hyundai",
+      "model": "Sonata",
+      "year": "2014",
+      "price": "9999",
+      "color": "Green",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "year": "2010",
+      "price": "7599",
+      "color": "Blue",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    }
+  ]
+}

@@ -1,3 +1,60 @@
+# SPA QUIZ
+
+## Used car lot
+
+
+#### Used car lot app encompassing all learned skills from the SPA module.
+
+1. Bootstrap
+1. Array methods
+1. Lamda functions
+1. XHR
+1. JSON
+1. IIFE module pattern
+1. Loose Augmentation
+1. Callback functions
+
+
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Single Page Applications Quiz
 
 ## Setup
@@ -106,3 +163,4 @@ var CarLot = (function () {
 
 })();
 ```
+>>>>>>> 44e6fbb797d407767e66fd61dab9dd6f761ab5a6
