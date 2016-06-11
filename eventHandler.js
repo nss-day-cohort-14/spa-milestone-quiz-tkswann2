@@ -21,10 +21,12 @@ var CarLot = (function (oldCarLot) {
     	});
     // loop over dynamically created product cards and add event listeners
     	for (var i = 0, j = productCards.length; i < j; i++) {
-    		let productCard = productCards[i];
+    		let productCard = productCards[i],
+    				color = 'rgba(60, 230, 214, .5)';
+
     		productCard.addEventListener('click', function (clickEvent) {
     			// pass click event to callback function
-    			CarLot.addStyles(clickEvent);
+    			CarLot.addStyles(clickEvent, color);
     		});
 			}
 

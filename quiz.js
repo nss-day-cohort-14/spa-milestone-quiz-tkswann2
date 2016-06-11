@@ -12,6 +12,7 @@ function populatePage (inventory) {
   			carYear = inventoryTracker.year,
   			carDescription = inventoryTracker.description,
   			carPurchasedStatus = inventoryTracker.purchased;
+         
         // convert sold-status from true/false to human readable form
         if (carPurchasedStatus === true) {
           carPurchasedStatus = 'Unavailable';
