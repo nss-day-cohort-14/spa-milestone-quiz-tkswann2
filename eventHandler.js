@@ -8,7 +8,7 @@ var CarLot = (function (oldCarLot) {
   oldCarLot.activateEvents = function () {
   	// event listener for keydown press in text input box for adding description
   	// to car product cards
-    	descriptionInput.addEventListener('keydown', function (event) {
+    	descriptionInput.addEventListener('keyup', function (event) {
     		for (var i = 0, j = productCards.length; i < j; i++) {
     			let editDescription = productCards[i];
     			// check for the 'active' (clicked) card
@@ -27,6 +27,7 @@ var CarLot = (function (oldCarLot) {
     			CarLot.addStyles(clickEvent);
     		});
 			}
+
   };
  return oldCarLot;
 })(CarLot || {});

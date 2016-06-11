@@ -18,6 +18,11 @@ function populatePage (inventory) {
         } else {
           carPurchasedStatus = 'Available';
         };
+
+        // creates a new row div, then one for every third card
+        if ( i % 3 === 0 ) {
+          htmlString += `<div class="row">`
+        }
         // build product card
   			htmlString += `<div class="col-sm-3 carProductCard" id="carProducts${i}">
 												<h4>${carMake}</h4>
@@ -28,6 +33,10 @@ function populatePage (inventory) {
 												<p>${carPurchasedStatus}</p>
 												<p>${carColor}</p>
 											</div>`;
+        // closes row div on every 6th card
+        if ( i % 3 === 2 ) {
+            htmlString +=`</div>`;
+        }
   }
   // add products to DOM
   outputRow.innerHTML += htmlString;

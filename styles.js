@@ -6,8 +6,8 @@ var CarLot = (function (oldCarLot) {
 			let productCard = productCards[i];
 					productCard.classList.add('defaultStyles');
 		}
-		let inventory = CarLot.getInventory();
 		for (var i = 0, j =  productCards.length; i < j; i++) {
+			let inventory = CarLot.getInventory();
 			let productCard = productCards[i],
 					color = inventory[i].color;
 			// set border color to be the color of the car
@@ -27,9 +27,9 @@ var CarLot = (function (oldCarLot) {
 		// grab clicked card for manipulation
 		let clickedCard = click.currentTarget;
 			// add border width class on click
-					clickedCard.classList.add('borderWidth');
-					clickedCard.classList.add('backgroundColor');
-					clickedCard.classList.add('active');
+				clickedCard.classList.add('borderWidth');
+				clickedCard.classList.add('backgroundColor');
+				clickedCard.classList.add('active');
 
 		// on click focus on text input for car description
 		descriptionInput.value = '';
